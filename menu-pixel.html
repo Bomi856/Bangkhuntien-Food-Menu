@@ -270,7 +270,7 @@ var m=$('mascot');$('msay').textContent=msg;m.classList.add('on');
 if(musOn)jingle();
 if(!matchMedia('(prefers-reduced-motion:reduce)').matches)confetti(big?44:22);
 clearTimeout(cheer.t);cheer.t=setTimeout(function(){m.classList.remove('on')},2400)}
-function confetti(n){var E=['🌱','🐚','✨','🦀','🌿','💖','⭐','🎉'];for(var i=0;i<n;i++){var s=document.createElement('span');s.className='cf';s.textContent=E[Math.floor(Math.random()*E.length)];s.style.left=Math.random()*100+'vw';s.style.animationDelay=(Math.random()*.4)+'s';s.style.fontSize=(16+Math.random()*16)+'px';document.body.appendChild(s);setTimeout(function(x){x.remove()},2500,s)}}
+function confetti(n){var E=['🌱','🐚','✨','🦀','🌿','💖','⭐','🎉', '🌳', '🐬'];for(var i=0;i<n;i++){var s=document.createElement('span');s.className='cf';s.textContent=E[Math.floor(Math.random()*E.length)];s.style.left=Math.random()*100+'vw';s.style.animationDelay=(Math.random()*.4)+'s';s.style.fontSize=(16+Math.random()*16)+'px';document.body.appendChild(s);setTimeout(function(x){x.remove()},2500,s)}}
 /* ===== MUSIC (generated chiptune, no audio files; off until you tap the button) ===== */
 var AC=null,musOn=false,mTimer=null,step=0,nextT=0;
 var MEL=[523,659,784,659,587,698,880,698,523,659,784,1047,988,784,659,0];
